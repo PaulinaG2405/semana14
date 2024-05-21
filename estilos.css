@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(122, 115, 115, 0.801);
+}
+/*Ejemplo*/
+nav a:hover{
+    background-color: rgba(0, 255, 255, 0.74);
+    color: blue;
+}
+form, input[type="text"]:focus{
+    border: 2px solid blueviolet;
+}
+form, input[type="checkbox"]:checked {
+    background-color: rgb(2, 118, 122); 
+}
+li:nth-child(odd) { 
+    background-color: rgb(177, 171, 171); 
+}
+p:nth-of-type(2) { 
+    font-weight: bold; 
+}
+@media(max-width:400px){
+    form{
+        max-width:400px;
+    }
+}
+
+@keyframes ChangeColor{
+    0%{color:aqua}
+    50%{color:blueviolet}
+    100%{color: crimson;}
+}
+h1{
+    animation: ChangeColor 2s infinite;
+}
